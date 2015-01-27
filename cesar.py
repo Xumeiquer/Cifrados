@@ -7,7 +7,7 @@ __author__ = "Jaume Martin"
 __version__ = "0.1"
 __license__ = "MIT"
 __app_name__ = "cesar"
-__doc__ = """Uso: cesar.py [-h] ( -c | -d ) -n <numero> -t <texto>
+__doc__ = """Usage: cesar.py [-h] ( -c | -d ) -n <numero> -t <texto>
 cesar.py -c -n <numero> -t <texto> [-g <fichero>]
 cesar.py -d -n <numero> -t <texto> [-g <fichero>]
 
@@ -87,7 +87,7 @@ def ucesar(texto):
 
     
 if __name__ == '__main__':
-    args = docopt(__doc__, version=__version__, usage="Uso")
+    args = docopt(__doc__, version=__version__)
     if args_correctos(args):
         if args["--cifra"]:
             genera_algabeto_cod(int(args["--numero"]))
